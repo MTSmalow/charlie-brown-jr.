@@ -1563,7 +1563,7 @@
   width: 80%;
   height: 352px;
 }
-@media (max-width: 469px) {
+@media (max-width: 550px) {
   .home-content01 {
     display: flow;
   }

@@ -15,9 +15,9 @@
       border-width: 0;
       border-style: solid;
     }
-    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption,span{
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{
       margin: 0;
-      color: white;
+      color:var(--di-color-default);
     }
     button {
       background-color: transparent;
@@ -77,6 +77,8 @@
 </head>
 <body>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="suplementar/style.css" />
+  <link rel="stylesheet" href="suplementar/botao_voltar.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
     <section>
@@ -99,19 +101,38 @@
               </div><img alt="pastedImage" src="public/external/pastedimage-s9ce-200w.png" class="home-pasted-image" />
             </div>
           </div>
-          <header>
+          <header >
             <div class="home-content">
-              <header class="home-navbar">
+              <header  id="header" class="home-navbar">
                 <img alt="logo" src="public/logo.png" class="home-logo" />
-                <div class="home-menu">
-                  <div class="home-links">
+                <nav id="nav">
+                  <button
+                    aria-label="Abrir Menu"
+                    id="btn-mobile"
+                    aria-haspopup="true"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                  >
+                    <span id="hamburger"></span>
+                  </button>
+                <div id="topo" class="home-menu">
+                  <div id="menu" role="menu" class="home-links">
                     <a href="#premios" class="home-link link">Premios</a>
                     <a href="#albuns"class="link">Albuns</a>
                     <a href="#integrantes" class="link">integrantes</a>
                     <a href="#find" class="home-link01 link">Contact</a>
+                    <label class="switch">
+                      <input type="checkbox" class="checkbox" id="switch">
+                      <span class="slider"></span>
+                  </label>
                   </div>
+                  <div>
+                    
+                  </div>
+                </div>
               </header>
             </div>
+            </nav>
           </header>
         </div>
     </div>
@@ -267,7 +288,7 @@
           <div class="home-heading03">
             <h2 class="home-header02">Seu grande sucesso</h2>
             <p class="home-caption02">
-              <span>A banda Charlie Brown Jr. foi um grande sucesso no cenário do rock brasileiroa banda ganhou destaque principalmente 
+              A banda Charlie Brown Jr. foi um grande sucesso no cenário do rock brasileiroa banda ganhou destaque principalmente 
                 nos anos 2000 e se tornou uma das mais influentes do gênero no Brasil. Seu som era
                 uma mistura de rock, punk, reggae e rap, com letras que abordavam temas como juventude, skate, amor e críticas sociais A
                 mistura de estilos musicais, aliada a um som autêntico e letras que retratavam a vida dos jovens urbanos no Brasil,
@@ -276,8 +297,8 @@
                 como uma das bandas mais influentes do rock brasileiro. Apesar de sua trajetória ter sido interrompida prematuramente,
                 o Charlie Brown Jr. deixou um legado duradouro no cenário musical brasileiro, sendo lembrado por gerações de fãs como uma
                 das bandas mais emblemáticas do país. Suas músicas continuam a ser ouvidas e admiradas por muitos, e o impacto da banda 
-                perdura no coração dos fãs de rock no Brasil.</span><br/><br/>
-            </p>
+                perdura no coração dos fãs de rock no Brasil.
+            </p><br/><br/>
           </div>
         </div>
       </div>
@@ -310,9 +331,9 @@
           <div class="guide-guide">
             <img alt="image" src="public/Guides/chorao.png" class="guide-portrait" />
             <div class="guide-details">
-              <h3 class="guide-name"><span>Chorão</span></h3>
+              <h3 class="guide-name">Chorão</h3>
               <span class="guide-location">
-                <span>Cantor principal</span>
+                <p>Cantor principal</p>
               </span>
             </div>
           </div>
@@ -323,10 +344,10 @@
           <div class="guide-guide guide-root-class-name2">
             <img alt="image" src="public/Guides/Champignon_(músico).jpg" class="guide-portrait" />
             <div class="guide-details">
-              <h3 class="guide-name"><span>Champignon</span></h3>
-              <span class="guide-location">
-                <span>Baixo elétrico(1992 – 2013)</span>
-              </span>
+              <h3 class="guide-name">Champignon</h3>
+              <p class="guide-location">
+                Baixo elétrico(1992 – 2013)
+              </p>
             </div>
           </div>
         </div>
@@ -336,10 +357,10 @@
           <div class="guide-guide guide-root-class-name">
             <img alt="image" src="public/Guides/thiago castanho.jpg" class="guide-portrait" />
             <div class="guide-details">
-              <h3 class="guide-name"><span>Thiago Castanho</span></h3>
-              <span class="guide-location">
-                <span>Violão(1993 – 2013)</span>
-              </span>
+              <h3 class="guide-name">Thiago Castanho</h3>
+              <p class="guide-location">
+                Violão(1993 – 2013)
+              </p>
             </div>
           </div>
         </div>
@@ -349,8 +370,8 @@
           <div class="guide-guide guide-root-class-name1">
             <img alt="image" src="public/Guides/marção.jpg" class="guide-portrait" />
             <div class="guide-details">
-              <h3 class="guide-name"><span>Marcão</span></h3>
-              <span class="guide-location"><span>Violão(1992 – 2013)</span></span>
+              <h3 class="guide-name">Marcão</h3>
+              <p class="guide-location">Violão(1992 – 2013)</p>
             </div>
           </div>
         </div>
@@ -360,8 +381,8 @@
         <div class="guide-guide guide-root-class-name1">
           <img alt="image" src="public/Guides/renato pelado.jpg" class="guide-portrait" />
           <div class="guide-details">
-            <h3 class="guide-name"><span>Renato Pelado</span></h3>
-            <span class="guide-location">Bateria1992 a 2005</span>
+            <h3 class="guide-name">Renato Pelado</h3>
+            <p class="guide-location">Bateria1992 a 2005</p>
           </div>
         </div>
       </div>
@@ -371,8 +392,8 @@
       <div class="guide-guide guide-root-class-name1">
         <img alt="image" src="public/Guides/pinguim.jpg" class="guide-portrait" />
         <div class="guide-details">
-          <h3 class="guide-name"><span>Pinguim</span></h3>
-          <span class="guide-location">Bateria(2005 - 2008)</span>
+          <h3 class="guide-name">Pinguim</h3>
+          <p class="guide-location">Bateria(2005 - 2008)</p>
         </div>
       </div>
     </div>
@@ -382,8 +403,8 @@
     <div class="guide-guide guide-root-class-name1">
       <img alt="image" src="public/Guides/Heitor-Gomes.jpg" class="guide-portrait" />
       <div class="guide-details">
-        <h3 class="guide-name"><span>Heitor Gomes</span></h3>
-        <span class="guide-location">Baixo elétrico(2005 – 2011)</span>
+        <h3 class="guide-name">Heitor Gomes</h3>
+        <p class="guide-location">Baixo elétrico(2005 – 2011)</p>
       </div>
     </div>
   </div>
@@ -393,8 +414,8 @@
     <div class="guide-guide guide-root-class-name1">
       <img alt="image" src="public/Guides/bruno graveto.jpg" class="guide-portrait" />
       <div class="guide-details">
-        <h3 class="guide-name"><span>Bruno Graveto</span></h3>
-        <span class="guide-location"><span>Bateria(2008 – 2013)</span></span>
+        <h3 class="guide-name">Bruno Graveto</h3>
+        <p class="guide-location">Bateria(2008 – 2013)</p>
       </div>
     </div>
   </div>
@@ -455,14 +476,36 @@
               com influências do punk rock californiano, e mistura vários ritmos como o reggae,o hip-hop, criando um estilo próprio. Todos 
               os membros da banda são naturais da cidade de Santos, exceto o vocalista Chorão,que nasceu em São Paulo.</p>
           </div>
+          <div class="home-links1">
+            <!-- botao animado de voltar ao topo -->
+            <a href="#topo" >
+            <button id="button">
+              <div class="text">
+                  <span>Back</span>
+                  <span>to</span>
+                  <span>top</span>
+              </div>
+              <div class="clone">
+                  <span>Back</span>
+                  <span>to</span>
+                  <span>top</span>
+              </div>
+              <svg width="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+          </button>
+        </a>
+            <!-- fim do botao -->
         </div>
       </div>
       <span class="home-copyright">© 2022 Character. All Rights Reserved.</span>
+    </div>
     </div>
   </section>
   </div>
 </div>
 </div>
 </section>
+<script src="suplementar/index.js"></script>
 </body>
 </html>

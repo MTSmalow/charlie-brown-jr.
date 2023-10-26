@@ -7,8 +7,8 @@
   --dl-color-danger-300: #a22020;
   --dl-color-danger-500: #bf2626;
   --dl-color-danger-700: #e14747;
-  --dl-color-gray-black: #000000;
-  --dl-color-gray-white: #ffffff;
+  --dl-color-gray-black: #090909;
+  --dl-color-gray-white: #f0eeee;
   --dl-size-size-medium: 96px;
   --dl-size-size-xlarge: 192px;
   --dl-size-size-xsmall: 16px;
@@ -34,6 +34,9 @@
   --dl-space-space-threeunits: 48px;
   --dl-space-space-threeunits2: 4px;
   --dl-space-space-oneandhalfunits: 24px;
+  --di-color-default: #fffff9;
+  --di-color-fractures: #2e204a;
+  --di-menu: #090909;
 }
 .button {
   color: var(--dl-color-gray-black);
@@ -79,7 +82,7 @@
   transform: none !important;
 }
 .link {
-  color: #ffffff;
+  color: var(--di-color-default);
   cursor: pointer;
   font-style: normal;
   transition: 0.3s;
@@ -106,7 +109,7 @@
   background-color: transparent;
 }
 .button-option:hover {
-  color: white;
+  color: rgb(164, 15, 15);
   border-color: var(--dl-color-gray-black);
   background-color: #397b54;
 }
@@ -226,5 +229,10 @@
   .accordion {
     padding-top: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media (background-color: #f8f2f2) {
+  .home-testimonials {
+    background-color: #4c347b;
   }
 }

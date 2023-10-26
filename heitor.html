@@ -15,9 +15,9 @@
       border-width: 0;
       border-style: solid;
     }
-    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption,span{
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{
       margin: 0;
-      color: white;
+      color:var(--di-color-default);
     }
     button {
       background-color: transparent;
@@ -73,15 +73,13 @@
       line-height: 1.15;
       color: var(--dl-color-gray-black);
     }
-    .home-content12{
-      background-color:#2e204a ;
-    }
   </style>
 </head>
 <body>
   <link rel="stylesheet" href="./style.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="suplementar/style.css" />
     <section>
     <div class="home-container">
       <section class="home-hero">
@@ -97,7 +95,12 @@
             <div class="home-content">
               <header class="home-navbar">
                 <a href="index.html"><img alt="logo" src="public/external/logoheitor.png" class="home-logo" /></a>
-                <div class="home-menu">
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="checkbox" id="switch">
+                    <span class="slider"></span>
+                </label>
+                </div>              
               </header>
             </div>
           </header>
@@ -184,7 +187,7 @@
         <div class="home-heading03">
           <h2 class="home-header02">banda</h2>
           <p class="home-caption02">
-            <span>Em um Domingo de Carnaval, dia 6 de Fevereiro de 2005 as onze horas da noite. Heitor em sua casa recebe uma ligação do 
+              Em um Domingo de Carnaval, dia 6 de Fevereiro de 2005 as onze horas da noite. Heitor em sua casa recebe uma ligação do 
               Baterista e seu Amigo Pinguim Ruas, ele estava o convidando para no outro dia ensaiar com ele em São Paulo. Heitor então 
               desmarcou um compromisso que tinha e na Segunda chegou para ensaiar com Pinguim e Thiago Castanho.Heitor a Princípio iria 
               apenas tocar com Chorão em Um Projeto chamado "Chorão Tour 2005". Mas recebeu a Notícia de que o Charlie Brown Jr estava se 
@@ -196,8 +199,8 @@
               Tempo. Neste Mesmo ano Heitor ainda Gravou o DVD Skate Vibration com a Banda Santista.Em 2007 Já consolidado na Banda, Heitor 
               grava o Seu segundo Disco junto com o Charlie Brown Jr, Chamado Ritmo, Ritual e Responsa . Novamente a Técnica de Triplo 
               Domínio se faz presente em Músicas como: Sem medo da escuridão e Café Fundation.Em 2008, Heitor Ainda Gravou um DVD Ao vivo 
-              com a Banda, Chamado Ritmo, Ritual e Responsa ao Vivo e uma Coletânea chamada Charlie Brown Jr - Perfil.</span><br/><br/>
-          </p>
+              com a Banda, Chamado Ritmo, Ritual e Responsa ao Vivo e uma Coletânea chamada Charlie Brown Jr - Perfil.
+          </p><br/><br/>
         </div>
       </div>
     </div>
@@ -218,4 +221,5 @@
       <span class="home-copyright">© 2022 Character. All Rights Reserved.</span>
     </div>
   </section>
+  <script src="suplementar/index.js"></script>
 </body></html>

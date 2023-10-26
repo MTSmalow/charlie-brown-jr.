@@ -15,9 +15,9 @@
       border-width: 0;
       border-style: solid;
     }
-    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption,span{
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{
       margin: 0;
-      color: white;
+      color: var(--di-color-default);
     }
     button {
       background-color: transparent;
@@ -78,6 +78,7 @@
 <body>
   <link rel="stylesheet" href="./style.css" />
   <link href="style2.css" real="stylesheet"/>
+  <link rel="stylesheet" href="suplementar/style.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
     
@@ -96,6 +97,12 @@
             <div class="home-content">
               <header class="home-navbar">
                <a href="index.html"><img width="440px" alt="logo" src="public/external/logomarcao.png" class="home-logo" /></a> 
+               <div>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="switch">
+                  <span class="slider"></span>
+              </label>
+              </div>
               </header>
             </div>
           </header>
@@ -145,7 +152,7 @@
         <div class="home-heading03">
           <h2 class="home-header02">banda</h2>
           <p class="home-caption02">
-            <span>Antes de ingressar o Charlie Brown Jr., estudou farmácia e bioquímica, jornalismo, propaganda e marketing. Foi professor
+            Antes de ingressar o Charlie Brown Jr., estudou farmácia e bioquímica, jornalismo, propaganda e marketing. Foi professor
                de guitarra e corretor de imóveis. Como músico, foi um dos integrantes da banda Last Joker, onde dividia o palco com 
                Christopher Clark, que em 2016 venceu a primeira edição do reality X-Factor Brasil. Essa bagagem com o Last Joker moldou o 
                guitarrista, evidenciando o seu ecletismo como músico, características essas que podem ser comprovadas em seu trabalho com o 
@@ -154,8 +161,8 @@
                 baterista da Ego Kill Talent), além da banda TH6 em 2006, com a qual gravou o álbum Contra Insetos Parasitas, com 25 faixas. 
                 Em 2011, retornou ao Charlie Brown Jr.Marcão formou em 2014, a banda Bula e lançou seu primeiro álbum, Não Estamos Sozinhos, 
                 com 13 faixas, lançado no mesmo ano pela gravadora Deckdisc. Logo na estreia, a Bula foi convidada a participar do 
-                Lollapalooza em 2015 e no Rock in Rio no mesmo ano.</span><br/><br/>
-          </p>
+                Lollapalooza em 2015 e no Rock in Rio no mesmo ano.
+          </p><br/><br/>
         </div>
       </div>
     </div>
@@ -176,4 +183,5 @@
       <span class="home-copyright">© 2022 Character. All Rights Reserved.</span>
     </div>
   </section>
+  <script src="suplementar/index.js"></script>
 </body></html>

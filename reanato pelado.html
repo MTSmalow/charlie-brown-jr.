@@ -15,9 +15,9 @@
       border-width: 0;
       border-style: solid;
     }
-    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption,span{
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{
       margin: 0;
-      color: white;
+      color: var(--di-color-default);
     }
     button {
       background-color: transparent;
@@ -73,13 +73,11 @@
       line-height: 1.15;
       color: var(--dl-color-gray-black);
     }
-    .home-content12{
-      background-color:#2e204a ;
-    }
   </style>
 </head>
 <body>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="suplementar/style.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
     <section>
@@ -97,6 +95,12 @@
             <div class="home-content">
               <header class="home-navbar">
                 <a href="index.html"><img alt="logo" src="public/external/logorenato.png" class="home-logo" /></a>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="checkbox" id="switch">
+                    <span class="slider"></span>
+                </label>
+                </div>
               </header>
             </div>
           </header>
@@ -128,7 +132,7 @@
         <div class="home-heading03">
           <h2 class="home-header02">banda</h2>
           <p class="home-caption02">
-            <span>Se interessou pela música graças à vitrola que o pai tinha em casa, e os primeiros discos que comprou foram do KISS e do 
+            Se interessou pela música graças à vitrola que o pai tinha em casa, e os primeiros discos que comprou foram do KISS e do 
               Kansas.A partir da adolescência, ele passou longos anos tocando MPB em bares de Santos, enquanto iniciava sua carreira autoral 
               no rock ao lado da banda Vulcano, parte importante da cena de Death Metal no litoral paulista.Antes de entrar para o Charlie 
               Brown, Pelado tocava com Marcão em outra banda chamada Last Joker. Conta ele que Chorão estava vendo um show, chegou perto da 
@@ -137,8 +141,8 @@
                precisavam de baterista, Chorão o convidou para tocar e ele aceitou, pois já tinha gostado das fitas demo que Chorão havia 
                mostrado para ele. O Charlie Brown precisava de outro guitarrista (Marcão nessa época já estava na banda) o primeiro nome em 
                mente foi Thiago Castanho que já era amigo de Pelado, pois já haviam tocado juntos também. Com isso surgiu a primeira formação
-                do Charlie Brown Jr.</span><br/><br/>
-          </p>
+                do Charlie Brown Jr.
+          </p><br/><br/>
         </div>
       </div>
     </div>
@@ -159,4 +163,5 @@
       <span class="home-copyright">© 2022 Character. All Rights Reserved.</span>
     </div>
   </section>
+  <script src="suplementar/index.js"></script>
 </body></html>

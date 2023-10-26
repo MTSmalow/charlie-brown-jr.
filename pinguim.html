@@ -15,9 +15,9 @@
       border-width: 0;
       border-style: solid;
     }
-    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption,span{
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{
       margin: 0;
-      color: white;
+      color: var(--di-color-default);
     }
     button {
       background-color: transparent;
@@ -73,13 +73,11 @@
       line-height: 1.15;
       color: var(--dl-color-gray-black);
     }
-    .home-content12{
-      background-color:#2e204a ;
-    }
   </style>
 </head>
 <body>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="suplementar/style.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
     <section>
@@ -97,7 +95,12 @@
             <div class="home-content">
               <header class="home-navbar">
                 <a href="index.html"><img alt="logo" src="public/external/logopinguim.png" class="home-logo" /></a>
-                <div class="home-menu">
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="checkbox" id="switch">
+                    <span class="slider"></span>
+                </label>
+                </div>
               </header>
             </div>
           </header>
@@ -132,7 +135,7 @@
         <div class="home-heading03">
           <h2 class="home-header02">banda</h2>
           <p class="home-caption02">
-            <span>Em janeiro de 2005, foi convidado a assumir a bateria da banda Charlie Brown Jr.[3]. Assumiu também a função de beatbox, 
+              Em janeiro de 2005, foi convidado a assumir a bateria da banda Charlie Brown Jr.[3]. Assumiu também a função de beatbox, 
               acompanhando Chorão nas canções. Antes de integrar a banda, Pinguim já havia trabalhado com o guitarrista Thiago Castanho. Com 
               a banda, gravou o álbum Imunidade Musical[4], na qual a sonoridade do grupo foi restabelecida através de 23 músicas tornando-se
                um álbum emblemático na carreira da banda, que tocou para um público de milhares de pessoas a cada show que fez, lotando os 
@@ -143,8 +146,8 @@
                 UNESCO e pelo Grupo Globo, tendo recebido o respectivos certificados de apreciação. Em 2007, gravou o álbum Ritmo, Ritual e 
                 Responsa[5], que foi trilha sonora do filme O Magnata.Em 2008, após três anos na bateria da banda liderada por Chorão, o site
                 oficial do grupo publicou uma mensagem explicando que a saída de Pinguim se deu porque o contrato dele venceu e nenhuma das 
-                partes manifestou interesse em renovar</span><br/><br/>
-          </p>
+                partes manifestou interesse em renovar
+          </p><br/><br/>
         </div>
       </div>
     </div>
@@ -165,4 +168,5 @@
       <span class="home-copyright">© 2022 Character. All Rights Reserved.</span>
     </div>
   </section>
+  <script src="suplementar/index.js"></script>
 </body></html>

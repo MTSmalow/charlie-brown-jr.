@@ -15,9 +15,9 @@
       border-width: 0;
       border-style: solid;
     }
-    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption,span{
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{
       margin: 0;
-      color: white;
+      color:var(--di-color-default);
     }
     button {
       background-color: transparent;
@@ -74,12 +74,14 @@
       color: var(--dl-color-gray-black);
     }
     .home-links{
-      color:#000000 ;
+      color:#000001 ;
     }
+    
   </style>
 </head>
 <body>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="suplementar/style.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
     <section>
@@ -98,6 +100,12 @@
               <header class="home-navbar">
                 <a href="index.html"><img alt="logo" src="public/external/logochamps.png" class="home-logo" /></a>
                 <div class="home-menu">
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" class="checkbox" id="switch">
+                      <span class="slider"></span>
+                  </label>
+                  </div>
               </header>
             </div>
           </header>
@@ -174,7 +182,7 @@
         <div class="home-heading03">
           <h2 class="home-header02">banda</h2>
           <p class="home-caption02">
-            <span>Iniciou sua vida musical aos 12 anos de idade. Foi na banda What's Up que o baixista e
+            Iniciou sua vida musical aos 12 anos de idade. Foi na banda What's Up que o baixista e
               Chorão trabalharam juntos pela primeira vez. Na época, Chorão era vocalista da banda. Depois que Chorão saiu da banda, 
               Champignon continuou alguns meses, mas depois saiu. E a convite de Chorão, começou uma nova banda, e assim começava o 
               Charlie Brown Jr.O primeiro álbum, Transpiração Contínua Prolongada, foi lançado em Junho de 1997, e fez sucesso nas 
@@ -182,8 +190,8 @@
               Revelação no VMB (Video Music Awards) dado pela MTV, em 1997. Nessa época Champignon ainda era menor de idade, e 
               consequentemente toda vez que a banda se apresentava em alguma casa noturna, era necessária uma autorização judicial para 
               que ele pudesse acompanhar seus companheiros. Champignon não tinha seu próprio instrumento; ele tocava com um baixo emprestado 
-              de amigos. Às vezes a banda perdia shows porque não conseguiam instrumentos.</span><br/><br/>
-          </p>
+              de amigos. Às vezes a banda perdia shows porque não conseguiam instrumentos.
+          </p><br/><br/>
         </div>
       </div>
     </div>
@@ -204,4 +212,5 @@
       <span class="home-copyright">© 2022 Character. All Rights Reserved.</span>
     </div>
   </section>
+  <script src="suplementar/index.js"></script>
 </body></html>

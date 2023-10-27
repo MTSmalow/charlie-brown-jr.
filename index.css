@@ -596,7 +596,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .home-content03 {
   gap: var(--dl-space-space-threeunits);
@@ -669,7 +669,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .home-image2 {
   height: 530px;

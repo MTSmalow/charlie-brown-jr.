@@ -414,6 +414,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  justify-content: center;
 }
 .home-quick-view {
   gap: var(--dl-space-space-fourunits);

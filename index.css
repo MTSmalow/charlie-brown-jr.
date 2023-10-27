@@ -1300,7 +1300,6 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-threeunits);
-  background-color: var(--di-color-fractures);
 }
 .home-main2 {
   width: 100%;

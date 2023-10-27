@@ -421,7 +421,6 @@
   gap: var(--dl-space-space-fourunits);
   width: 100%;
   display: flex;
-  max-width: 1440px;
   align-items: center;
   padding-top: 120px;
   padding-left: var(--dl-space-space-fiveunits);

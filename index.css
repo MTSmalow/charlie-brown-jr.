@@ -1249,7 +1249,7 @@
   text-decoration: none;
 }
 span {
-  color: ivory;
+  color: var(--di-color-default);
 }
 .home-link06,
 .home-link07,

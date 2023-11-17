@@ -125,6 +125,9 @@ body {
     border-top: 2px solid;
     width: 20px;
   }
+  #hamburger span{
+    color: #3f5fa9;
+  }
   #hamburger::after,
   #hamburger::before {
     content: "";

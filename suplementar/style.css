@@ -14,7 +14,7 @@
   height: 0;
 }
 
-/* The slider */
+/*  slider de troca de tema */
 .slider {
   --background: #28096b;
   position: absolute;
@@ -61,6 +61,7 @@ body {
   --di-color-fractures: #4c347b;
   --di-menu: #f8f2f2;
 }
+/* fim do slider de troca de tema*/
 
 /* botao hanbunger */
 
@@ -125,7 +126,7 @@ body {
     border-top: 2px solid;
     width: 20px;
   }
-  #hamburger span{
+  #btn-mobile span{
     color: #3f5fa9;
   }
   #hamburger::after,

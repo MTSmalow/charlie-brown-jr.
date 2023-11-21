@@ -1,0 +1,217 @@
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+body {
+  background: #2e204a;
+  color: #606468;
+  font: 87.5%/1.5em "Open Sans", sans-serif;
+  margin: 0;
+}
+
+input {
+  border: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+after {
+  clear: both;
+}
+
+#login {
+  margin: 50px auto;
+  width: 320px;
+}
+
+#login form {
+  margin: auto;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: #282e33;
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #434a52;
+  color: #606468;
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+#login form input[class="caixa"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 235px;
+  height: 50px;
+}
+
+#login form input[type="submit"] {
+  background: #b5cd60;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+#login form input[type="submit"]:hover {
+  background: #16aa56;
+}
+.custom-checkbox2 {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  padding-bottom: 10px;
+}
+
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  padding-bottom: 10px;
+  display: inline-block; /* adicione esta linha */
+}
+
+.custom-checkbox input[type="checkbox"] {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.custom-checkbox2 input[type="checkbox"] {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark1,
+.checkmark2,
+.checkmark3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.custom-checkbox:hover input[type="checkbox"] ~ .checkmark1,
+.custom-checkbox:hover input[type="checkbox"] ~ .checkmark2,
+.custom-checkbox2:hover input[type="checkbox"] ~ .checkmark3 {
+  background-color: #ccc;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark1,
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark2,
+.custom-checkbox2 input[type="checkbox"]:checked ~ .checkmark3 {
+  background-color: #b5cd60;
+}
+
+.checkmark1:after,
+.checkmark2:after,
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark1:after,
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark2:after,
+.custom-checkbox2 input[type="checkbox"]:checked ~ .checkmark3:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark1:after,
+.custom-checkbox .checkmark2:after,
+.custom-checkbox2 .checkmark3:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.checkbox {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.tag {
+  display: block;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.custom-select,
+.custom-select2 {
+  position: relative;
+  display: inline-block;
+  max-width: 300px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #2c3338;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.custom-select select,
+.custom-select2 select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.select {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.custom-select a,
+.custom-select2 a {
+  font-size: 22px;
+}
+
+.espaco {
+  padding-top: 10px;
+}
+.bg_video,
+.videosshow iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.bg_video {
+  right: 0;
+  bottom: 0;
+  min-width: 25%;
+  min-height: 25%;
+  z-index: -1;
+  aspect-ratio: 16/9;
+}

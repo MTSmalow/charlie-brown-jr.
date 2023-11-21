@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="registre-se.css">
+</head>
+<body>
+  <div id="login">
+    <form name='form-login'>
+      <div> <span class="fontawesome-user"></span>
+        <input class="caixa" type="text" id="user" placeholder="Nome" required></div>
+     
+     <div><span class="fontawesome-lock"></span>
+        <input class="caixa" type="text" id="user" placeholder="Sobrenome"></div>
+      
+      <div> <span class="fontawesome-email"></span>
+        <input class="caixa" type="text" id="user" placeholder="Nome de Usuario"></div>
+
+        <div><span class="fontawesome-lock"></span>
+        <input class="caixa" type="email" id="email" placeholder="Email" required></div>
+
+        <!-- checkbox genero -->
+
+        <a class="tag">Genero:</a>
+
+        <div class="custom-checkbox">
+          <input type="checkbox" class="check" id="terms1" name="terms1">
+          <label for="terms1" class="checkmark1"></label><a class="checkbox">feminino</a>
+         </div>
+         <div class="custom-checkbox">
+          <input type="checkbox" class="check" id="terms2" name="terms2">
+          <label for="terms2" class="checkmark2"></label><a class="checkbox">masculino</a>
+         </div>
+         <div class="custom-checkbox2">
+          <input type="checkbox" class="check" id="terms3" name="terms3">
+          <label for="terms3" class="checkmark3"></label><a class="checkbox">prefiro não informar</a>
+         </div>
+
+         <!--     fim checkbox               -->
+
+         <div><span class="fontawesome-lock"></span>
+          <input class="caixa" type="date" id="pass" placeholder="aniversario"></div>
+
+        <div><span class="fontawesome-lock"></span>
+            <input class="caixa" type="tel" id="phone" placeholder="telefone" required></div>
+
+            <div class="custom-select">
+              <a  class="selected-option select">estado</a>
+              <select id="select-estado"name="estado">
+                 <option value="AC">Acre</option>
+                 <option value="AL">Alagoas</option>
+                 <option value="AP">Amapá</option>
+                 <option value="AM">Amazonas</option>
+                 <option value="BA">Bahia</option>
+                 <option value="CE">Ceará</option>
+                 <option value="ES">Espírito Santo</option>
+                 <option value="GO">Goiás</option>
+                 <option value="MA">Maranhão</option>
+                 <option value="MT">Mato Grosso</option>
+                 <option value="MS">Mato Grosso do Sul</option>
+                 <option value="MG">Minas Gerais</option>
+                 <option value="PA">Pará</option>
+                 <option value="PB">Paraíba</option>
+                 <option value="PR">Paraná</option>
+                 <option value="PE">Pernambuco</option>
+                 <option value="PI">Piauí</option>
+                 <option value="RJ">Rio de Janeiro</option>
+                 <option value="RN">Rio Grande do Norte</option>
+                 <option value="RS">Rio Grande do Sul</option>
+                 <option value="RO">Rondônia</option>
+                 <option value="RR">Roraima</option>
+                 <option value="SC">Santa Catarina</option>
+                 <option value="SP">São Paulo</option>
+                 <option value="SE">Sergipe</option>
+                 <option value="TO">Tocantins</option>
+                 <option value="DF">Distrito Federal</option>
+              </select>
+             </div>
+
+            <div class="custom-select2">
+              <a id="escolha" class="selected-option2 select">municipio</a>
+              <select id="select-municipio"  onchange="exibirEscolha()">
+              </select>
+             </div>
+
+            <div class="espaco"> <span class="fontawesome-user"></span>
+              <input class="caixa" type="text" id="city" placeholder="cidade" required></div>
+
+            <div> <span class="fontawesome-user"></span>
+              <input class="caixa" type="text" id="cep" placeholder="CEP" required></div>
+
+            <div> <span class="fontawesome-user"></span>
+              <input class="caixa" type="text" id="endereco" placeholder="Endereço" required></div>
+  
+      <input type="submit" value="Login">
+
+</form>
+  </div>
+</div>
+<script src="index.js">
+</script>
+</body>
+</html>

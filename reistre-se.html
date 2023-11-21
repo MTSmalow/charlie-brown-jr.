@@ -4,9 +4,28 @@
   <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="registre-se.css">
+  <link rel="stylesheet" href="suplementar/login/registre-se.css">
+  <link rel="stylesheet" href="suplementar/botao_voltar.css">
+  <style>
+    #button{
+      color:rgb(4, 4, 4);
+    }
+  </style>
 </head>
 <body>
+  <a href="index.html" >
+    <button id="button">
+      <div class="text">
+          <span>voltar</span>
+      </div>
+      <div class="clone">
+        <span>voltar</span>
+      </div>
+      <svg width="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+  </button>
+</a>
   <div id="login">
     <form name='form-login'>
       <div> <span class="fontawesome-user"></span>
@@ -86,20 +105,21 @@
              </div>
 
             <div class="espaco"> <span class="fontawesome-user"></span>
-              <input class="caixa" type="text" id="city" placeholder="cidade" required></div>
+              <input class="caixa" type="text" id="city" placeholder="cidade" ></div>
 
             <div> <span class="fontawesome-user"></span>
-              <input class="caixa" type="text" id="cep" placeholder="CEP" required></div>
+              <input class="caixa" type="text" id="cep" placeholder="CEP" ></div>
 
             <div> <span class="fontawesome-user"></span>
-              <input class="caixa" type="text" id="endereco" placeholder="Endereço" required></div>
+              <input class="caixa" type="text" id="endereco" placeholder="Endereço" ></div>
   
-      <input type="submit" value="Login">
+      <input type="submit" href="index.html"value="registrar-se">
 
 </form>
   </div>
+  
 </div>
-<script src="index.js">
+<script src="suplementar/login/index.js">
 </script>
 </body>
 </html>
